@@ -7,7 +7,8 @@ const app = express();
 
 // ✅ VERY IMPORTANT
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174","https://taskmanagerwithauth.onrender.com"],
+  // origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: ["https://taskmanagerwithauth.onrender.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
